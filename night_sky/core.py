@@ -1,6 +1,6 @@
 from discord.ext import commands
-from .modules import Module
+from .modules import setup as setup_sys
 
 
 def setup(bot: commands.Bot):
-    bot.add_command(Module)
+    return setup_sys
